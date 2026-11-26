@@ -7,10 +7,12 @@ function MovieList({ movies }) {
             {movies.map((movie) => (
                 <MovieCard
                     key={movie.title}
+                    id={movie.id}
                     title={movie.title}
                     description={movie.description}
                     posterURL={movie.posterURL}
                     rating={movie.rating}
+                    trailerURL={movie.trailerURL}
                 />
             ))}
         </div>

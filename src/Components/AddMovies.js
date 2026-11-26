@@ -24,8 +24,8 @@ function AddMovie({ onAddMovie }) {
 };
     return (
          <div className="add-movie">
-            <h1>THE MOVIE STOP</h1>
-            <h2>Add a Movie</h2>
+           
+            <h1>Add a Movie</h1>
 
            <form className="movie-form" onSubmit={handleSubmit}>
    <input

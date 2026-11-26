@@ -93,11 +93,13 @@ body {
     padding: 15px;
     border-radius: 12px;
     text-align: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .movie-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
 .movie-poster {
@@ -126,5 +128,19 @@ body {
     .filter-container {
         flex-direction: column;
     }
+}
+.movie-card button {
+    padding: 10px 16px;
+    margin: 6px;
+    background-color: #0d9488;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.movie-card button:hover {
+    background-color: #0f766e;
 }
 
